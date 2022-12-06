@@ -18,18 +18,11 @@
 @import image_picker_ios;
 #endif
 
-#if __has_include(<lecle_social_share/LecleSocialSharePlugin.h>)
-#import <lecle_social_share/LecleSocialSharePlugin.h>
-#else
-@import lecle_social_share;
-#endif
-
 @implementation GeneratedPluginRegistrant
 
 + (void)registerWithRegistry:(NSObject<FlutterPluginRegistry>*)registry {
   [FilePickerPlugin registerWithRegistrar:[registry registrarForPlugin:@"FilePickerPlugin"]];
   [FLTImagePickerPlugin registerWithRegistrar:[registry registrarForPlugin:@"FLTImagePickerPlugin"]];
-  [LecleSocialSharePlugin registerWithRegistrar:[registry registrarForPlugin:@"LecleSocialSharePlugin"]];
 }
 
 @end
